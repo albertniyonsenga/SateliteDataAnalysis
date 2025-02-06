@@ -1,26 +1,5 @@
-# Guidelines
+This is how we did this part of the assignment:
 
-## Before You Start
+cd analyzed_data/: changed directory to the analyzed data where the required file was supposed to be created vi highest_temp.csv: created a file named highest_temp.csv as required in the question i: to permit us to insert the text #!/bin/bash: tells the system to use the bash shell to interpret the script
 
-Follow these steps to prepare for your work:
-
-1. **Fork the Repository**  
-   Click on the **Fork** button at the top of the repository page. This creates a copy of the repository for your group.
-
-2. **Add Collaborators**  
-   Once the repository is forked:
-   - Go to **Settings** > **Collaborators and teams** > **Add people**.
-   - Invite all group members as collaborators.
-
----
-
-## Working on the Project
-
-After forking and setting up collaborators, follow these steps:
-
-1. **Clone the Repository**  
-   Clone your forked repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/project-name.git
-   ```
-
+tail -n +2 satellite_temperature_data.csv tail -n +2: prints all lines from the second line onward, removing the header from the CSV file satellite_temperature_data.csv: the input file containing temperature data | sort -t, -k2 -nr |: sends the output of the tail to sort. sort -t,: sets comma as the delimiter since it's a CSV file -k2 tells sort to sort by the second column because it contains temperature values. -n: Sort numerically -r: get the highest values first. | head -10 > highest_temp.csv |: sends the sorted output to the head. head -10: extracts the top 10 highest temperatures.
