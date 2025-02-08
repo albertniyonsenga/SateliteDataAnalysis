@@ -41,3 +41,19 @@ And here it's `../raw_data/satelite_temperature_data.csv`; so why `..`? As our f
 - We then extracted other sections to make the new file of analyzed data look more informative where we used `cut -d, -f 1,2,4` by 1, we mean country, by 2, we mean `month` that temperature took place, and our very own `humidity` all from the sorted lines.
 - Finally, we have to print all the sorted data to the new file to make it easy to get data. Here, we used commands `> analyzed_data/humidity_data_${country_name}.csv` so that we are sure that the data will be saved into `humidity_data_${country_name}.csv` in the `analyzed_data` directory. By using a country variable to name the new file, we can be sure we saved the time to keep naming when we changed the country during analysis.
 
+
+## Contributors 💻
+
+Thanks to  the following contributors who have made this `Coding lab` possible, we hope that with your Linux skills, anyone can now extract insights from the vast amounts of satellite data collected to predict weather changes across Africa.
+
+- [AdolehSamuel](https://github.com/AdolehSamuel)
+- [Amazing-beep](https://github.com/Amazing-beep)
+- [Divine-kuzo](https://github.com/Divine-kuzo)
+- [rachealA924](https://github.com/rachealA924)
+- [Divine-kuzo](https://github.com/Divine-kuzo)
+- [albertniyonsenga](https://github.com/albertniyonsenga)
+
+Your contributions are highly appreciated 🎉. 
+
+
+
