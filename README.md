@@ -31,12 +31,12 @@ git add . : adds the files to the git hub
 git commit -m “Update all”: commits the files in the git hub
 git push: pushes the files to the main branch in git hub
 
-## Entire Data of Country - Eswatini
+## Humidity Data - Eswatini
 For the task, we were required to analyze data of our country of choice by extracting the entire data of that country and then saving its result in descending order of humidity and then saving the output in the new country and using a variable `country_name` to represent the selected country. Let's get our explain how we achieved that automation using our Linux and shell scripts:
 
 - First, we have declared `country_name` so that we will be able to assign any country of our choice, and as our choice, we used `Eswatini.`
 - Secondly, we want to make sure we can get the country without becoming dirty with the dataset, so we used `grep "${country_name},"` so that we can able to search for the right content followed by country name in our dataset file, and then we added the path of our file,
-  > The reason we followed our variable by *,* is that content in CSV files are separated by a comma and making like that we are sure that we will be looking for the contents which follow our country name.
+  > The reason we followed our variable by *,* is that content in CSV files is separated by a comma, and making like that, we are sure that we will be looking for the contents which follow our country name.
 
 And here it's `../raw_data/satelite_temperature_data.csv`; so why `..`? As our file is in a sub-directory, we have to specify where our scripts will look for the dataset, and by using `..`, we specify that it's located in the parental directory and then add the sub-directory and then file.
 - So far, we also need to extract the humidity data based on the data sorted and then order them in descending order, so we used `sort -t, -k 4 -nr`, where we clarified that we must get data in `column 4` where we got humidity data and then `-nr` to get them in reverse order(Highest to lowest) and then we added `uniq` to remove duplicated lines.
