@@ -1,4 +1,6 @@
-# Satelite Data Analysis
+<div align="center">
+  <h1>Satelite Data Analysis 🛰️</h1>
+</div>
 
 In this repository, we aim to use our Linux skills to extract insights from the vast amounts of satellite data collected to help an AI-based firm that utilizes satellite data to
 predict weather changes, providing Africa with valuable insights and solutions to optimize
@@ -44,7 +46,7 @@ And here it's `../raw_data/satelite_temperature_data.csv`; so why `..`? As our f
 
 ## Contributors 💻
 
-Thanks to  the following contributors who have made this `Coding lab` possible, we hope that with your Linux skills, anyone can now extract insights from the vast amounts of satellite data collected to predict weather changes across Africa.
+Thanks to  the **Group 31** members who have made this `Coding lab` possible, we hope that with your Linux skills, anyone can now extract insights from the vast amounts of satellite data collected to predict weather changes across Africa.
 
 - [AdolehSamuel](https://github.com/AdolehSamuel)
 - [Amazing-beep](https://github.com/Amazing-beep)
