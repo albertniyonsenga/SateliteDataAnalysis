@@ -16,7 +16,7 @@ For this part of the assignment, we were required to extract the Top 10 highest 
 - We then extracted other sections to make the new file of analyzed data look more informative. Where we used `cut -d, -f 1,2,3` by 1, 2, and 3,. We mean `country`, `month` and `temperature ` respectively from the sorted lines.
 - we used commands `> highest_temp.csv` so that we are sure that the data will be saved into `humidity_data_${country_name}.csv` in the current directory, and in our case, it's `analyzed_data`. By using a country variable to name the new file, we can be sure we saved the time to keep naming when we changed the country during analysis.
 
-After using shell scripts and Linux skills, we can easily get the top 10 highest temperatures in [Top 10 Highest temperatures](analyzed_data/highest_temp.csv).
+After using shell scripts and Linux skills, we can easily get the top 10 highest temperatures in [Top 10 Highest temperatures](https://github.com/albertniyonsenga/SateliteDataAnalysis/blob/main/analyzed_data/highest_temp.csv).
 
 
 ## Humidity Data - Eswatini
@@ -31,7 +31,7 @@ And here it's `../raw_data/satelite_temperature_data.csv`; so why `..`? As our f
 - We then extracted other sections to make the new file of analyzed data look more informative where we used `cut -d, -f 1,2,4` by 1, we mean country, by 2, we mean `month` that temperature took place, and our very own `humidity` all from the sorted lines.
 - Finally, we have to print all the sorted data to the new file to make it easy to get data. Here, we used commands `> humidity_data_${country_name}.csv` so that we are sure that the data will be saved into `humidity_data_${country_name}.csv` in the `analyzed_data` in our current directory. By using a country variable to name the new file, we can be sure we saved the time to keep naming when we changed the country during analysis.
 
-Here is the result ➡️ [Eswatini Humidity analysis](analyzed_data/highest_data_Eswatini.csv).
+Here is the result ➡️ [Eswatini Humidity analysis](https://github.com/albertniyonsenga/SateliteDataAnalysis/blob/main/analyzed_data/highest_temp.csv).
 
 
 ## Contributors 💻
